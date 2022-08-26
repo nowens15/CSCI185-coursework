@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(37, 23, 3);}
+
+h1{
+    margin: 0;
+    color: rgb(165, 129, 88);
+    text-align: center;
+    }
+
+    .tan-banner {
+    background-color: rgb(230, 214, 180);
+    padding: 25px;
+}
+
+p{
+    color:rgb(255, 236, 184);
+    text-align: center;
+}
+
+section {
+    border: solid 0px rgb(255, 255, 255);
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    align-items: left;
+}
+
+/* Your code here */
