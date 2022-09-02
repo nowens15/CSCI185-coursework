@@ -9,7 +9,13 @@ body {
 }
 header, section {
     padding: 20px;
-}
+    }
+    header{
+        background-color: #F7F3D4;
+    }
+    h1{
+        text-align: center;
+    }
 p, li {
     line-height: 1.5em;
 }
