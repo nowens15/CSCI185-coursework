@@ -1,0 +1,16 @@
+body{
+    background-color: lightgray;
+}
+
+header{
+    background-color: #b4cded;
+    text-align: center;
+    padding: 1px;
+    margin: 3px;
+    font-family: Impact;
+    font-size: 150%;
+}
+
+nav{
+    align-items: center;
+}
