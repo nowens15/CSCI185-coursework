@@ -11,4 +11,29 @@ body {
     margin: 0;
 }
 
+section {
+height: 100vh;
+border: solid 10px hotpink;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
 /* create additional rules below:  */
+
+#home {
+background-color: ;
+}
+
+#bio {
+
+}
+
+#portfolio {
+
+}
+
+#contact {
+
+}

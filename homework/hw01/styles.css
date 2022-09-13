@@ -1,0 +1,92 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #008081;
+    border:  hotpink solid 3px;
+}
+
+ul {
+    border: hotpink solid 3px;
+    display: flex;
+    justify-content: right;
+    margin: 15px;
+}
+
+li {
+    border: solid 2px hotpink;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    list-style-type: 0;
+    font-family: Arial;
+    color: white;
+}
+
+#profile-pic {
+    border: hotpink solid 3px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    border: hotpink solid 3px;
+    font: white;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    font-family: Helvetica;
+}
+
+h2 {
+    display: flex;
+    border: hotpink solid 3px;
+    justify-content: left;
+    padding: 10px;
+    color: #008081;
+    font-family: Helvetica;
+}
+
+#projects {
+    background-color:lightgray;
+    border: hotpink solid 3px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: auto auto;
+    border: hotpink solid 3px;
+    column-gap: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+#about {
+    border: hotpink solid 3px;
+}
+
+#contact {
+
+}
+
+footer p{
+    background-color: lightgray;
+    border: hotpink solid 3px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Your CSS Code Here! I accidentally added it to what was existing above, my bad lol*/
