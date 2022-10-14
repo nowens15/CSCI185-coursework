@@ -5,11 +5,36 @@ function setup() {
 
     // fill('red');
     noFill();
-    circle(100, 200, 50);
-    circle(100, 250, 50);
-    circle(100, 300, 50);
-    circle(100, 350, 50);
-    circle(100, 400, 50);
 
+
+    let x = canvasWidth/2;
+    let y = canvasHeight/2;
+    let size = canvasWidth;
+    let fillColor = 'blue';
+    while(size >= 25) {
+        if (fillColor == 'yellow') {
+            fillColor = 'lavendar';
+        } else {
+            fillColor = 'yellow';
+        }
+        fill(fillColor);
+        circle(x,y,size);
+        size -= 25;
+    }
+
+    // fill('red');
+    // circle(y + 100, y, 50);
+    // fill('orange');
+    // circle(y + 200, y, 50);
+    // fill('red');
+    // circle(y + 300, y, 50);
+    // fill('orange');
+    // circle(y + 400, y, 50);
+    // fill('red');
+    // circle(y + 500, y, 50);
+    // fill('orange');
+    // circle(y + 600, y, 50);
+    // y += 50;
+ 
     drawGrid(canvasWidth, canvasHeight);
 }
