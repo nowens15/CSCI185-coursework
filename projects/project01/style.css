@@ -1,0 +1,14 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}  
+main {
+    height: 100vh;
+}
+
+canvas{
+    background-image: url('bathouse2.jpg');
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
