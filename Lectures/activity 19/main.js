@@ -22,6 +22,7 @@ async function fetchCourses() {
             * Only view classes that meet on Tuesdays and Thursdays? 
 */
 function displayResults(data) {
+    document.querySelector('#results').innerHTML = "";
     console.log(data);
     console.log(data[0].Title);
     console.log(data[0].Instructors[0].Name);
@@ -31,11 +32,17 @@ function displayResults(data) {
     for (let i = 0; i < data.length; i++) {
         const course = data[i];
         console.log(course);
-        displayCourse(course);       
+        // if (course.Classification.DiversityIntensiveR == true) {
+        //     displayCourse(course); 
+        // }
+        const department = document.querySelector('#department').value;
+        if (course.Department == department) {
+            displayCourse(course); 
+        }             
     }
 }
 
-function displayCourse(){
+function displayCourse(course){
     let instructor = 'TBD';
     if (course.Instructors.length > 0) {
         instructor = course.Instructors[0].Name;

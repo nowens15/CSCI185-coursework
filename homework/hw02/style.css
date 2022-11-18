@@ -83,6 +83,23 @@ footer {
 /* Part A: Left Navigation */
 /***************************/
 
+#sp {
+    padding: 5px;
+    font-size: 35px;
+}
+
+#sidebar a{
+    margin: 10px;
+}
+
+#sidebar a i{
+    padding: 5px;
+}
+
+#sidebar a.selected{
+    border-left: greenyellow 3px solid;
+}
+
 /* Your Code Here */
 
 
@@ -91,9 +108,41 @@ footer {
 /* Part B: Header & Nav Styling */
 /********************************/
 
-/* Your Code Here */
+header {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+   
+}
 
+header #profile{
+    margin: 15px;
+    padding: 5px 30px;
+    border-radius: 15px; 
+    background-color: rgb(36, 33, 33);
+ }
 
+header #upgrade{
+    margin: 15px;
+    padding: 5px 30px;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+nav a{
+    margin: 15px;
+    padding: 5px;
+}
+
+nav a.selected{
+    border-bottom: greenyellow 3px solid;
+}
 
 
 
@@ -101,11 +150,22 @@ footer {
 /* Part C: Artists Panel */
 /*************************/
 
-/* Your Code Here.
-   For the desktop view, there should be 5 cards per row.
-*/
+#featured-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
 
+.artist-card img{
+    width: 100%;
+    border-radius: 150px;
+}
 
+.artist-card {
+    padding: 15px;
+    background-color: rgb(36, 33, 33);
+    margin: 15px;
+    border-radius: 15px;
+}
 
 
 
@@ -117,19 +177,18 @@ footer {
 /* Your Code Here */
 
 @media screen and (max-width: 1000px) {
-    /* 
-        Tablet Display: 3 cards per row!
-    
-    */
+#featured-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 }
 
 
 @media screen and (max-width: 700px) {
-    /* Mobile Display 
-        * 2 cards per row
-        * The aside panel and "Upgrade" button should no longer be visible.
-        * There should only be a 1-column layout.
-    */
+    #featured-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 
