@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&amp;display=swap">
+<link rel="stylesheet" href="home1.css">
+<link rel="stylesheet" href="timeline.css">
+<script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js" defer></script>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">Home</a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<header>
+    <h1>Ghibli Evolutions</h1>
+</header>
+<main>
+    <section>
+        <h2>Image</h2>
+    </section>
+    <section>
+        <h2>About</h2>
+        <p>jfksdlajfdkf </p>
+    </section>
+    <section>
+        <h2>Movie Timeline</h2>
+        <nav id="timeline-nav">
+            <a href="#section1">1989</a>
+            <a href="#section2">2001</a>
+            <a href="#section3">2006</a>
+            <a href="#section4">2009</a>
+        </nav>
+        <div id="fullpage">
+            <div class="section" id="section1">
+              <h1>Disney Movies Timeline</h1>
+            </div>
+            <div class="section" id="section2">
+               <img src="https://upload.wikimedia.org/wikipedia/en/7/7c/Beautybeastposter.jpg" />
+              <h1>1991</h1>
+              <div class="content">
+                Beauty and the Beast
+              </div>
+            </div>
+            <div class="section" id="section3">
+               <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/Aladdinposter.jpg/220px-Aladdinposter.jpg" />
+              <h1>1992</h1>
+              <div class="content">
+               Aladdin
+              </div>
+            </div>
+            <div class="section" id="section4">
+              <img src="https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg" />
+              <h1>1994</h1>
+              <div class="content">
+                 The Lion King
+              </div>
+            </div>
+          </div>
+    </section>
+</main>
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+new fullpage('#fullpage', {  
+  // get one from 
+  // https://alvarotrigo.com/fullPage/pricing/
+  licenseKey: 'YOUR KEY HERE',
+
+  navigation: true,
+  sectionsColor: ['#ff5f45', '#0798ec', '#fc6c7c', '#fec401'],
+});
+
+</script>
+
+</body>
+</html>
