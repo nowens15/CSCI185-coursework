@@ -1,4 +1,14 @@
 
+#intro {
+  display: flex;
+  justify-content: center;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+}
+
 .section {
   display: flex;
   flex-direction: column;
@@ -38,19 +48,15 @@
 }
 
 #section1{
-    background-color: green;
+    background-color: rgb(112, 156, 217);
 }
 
 #section2{
-    background-color: rgb(71, 177, 216);
+    background-color: rgb(87, 184, 165);
 }
 
 #section3{
-    background-color: rgb(205, 226, 234);
-}
-
-#section4{
-    background-color: rgb(231, 245, 211);
+    background-color: rgb(205, 237, 249);
 }
 
 @media screen and (max-width: 700px) {
